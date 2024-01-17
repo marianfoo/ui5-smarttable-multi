@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "es2022",
+    "skipLibCheck": true,
+    "allowJs": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "moduleResolution": "node",
+    "rootDir": "./webapp",
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "paths": {
+      "project1/*": [
+        "./app/project1/webapp/*"
+      ],
+      "unit/*": [
+        "./app/project1/webapp/test/unit/*"
+      ],
+      "integration/*": [
+        "./app/project1/webapp/test/integration/*"
+      ]
+    },
+    "typeRoots": [
+      "./app/project1/node_modules/@types",
+      "./app/project1/node_modules/@sapui5/ts-types-esm"
+    ]
+  },
+  "include": [
+    "../app/project1/webapp/**/*"
+  ]
+}

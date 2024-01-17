@@ -1,0 +1,35 @@
+{
+  "name": "@capire/bookshop",
+  "version": "1.0.0",
+  "description": "A simple self-contained bookshop service.",
+  "files": [
+    "app",
+    "srv",
+    "db",
+    "index.cds",
+    "index.js"
+  ],
+  "devDependencies": {
+    "@cap-js/sqlite": "*",
+    "@sap/ux-specification": "^1.108.20"
+  },
+  "dependencies": {
+    "@cap-js-community/odata-v2-adapter": "^1.12.2",
+    "@sap/cds": "^7",
+    "cds-plugin-ui5": "^0.7.5",
+    "express": "^4.17.1",
+    "passport": ">=0.4.1"
+  },
+  "scripts": {
+    "genres": "cds serve test/genres.cds",
+    "start:serve": "cds-serve",
+    "watch": "cds watch",
+    "start": "cds watch --open project1/index.html?sap-ui-xx-viewCache=false"
+  },
+  "sapux": [
+    "app/project1"
+  ],
+  "workspaces": [
+      "app/*"
+    ]
+}

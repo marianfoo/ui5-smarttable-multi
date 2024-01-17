@@ -1,0 +1,18 @@
+<mvc:View controllerName="project1.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:smartFilterBar="sap.ui.comp.smartfilterbar"
+	xmlns:smartTable="sap.ui.comp.smarttable"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+    <Page id="page" title="{i18n>title}">
+		<Button text="Go to ViewDefaultModel" press="onPressGoToViewDefaultModel"/>
+			<smartTable:SmartTable id="smartTableBooks" initialise="initialiseSmartTableBooks" 
+				tableType="ResponsiveTable" useExportToExcel="true" beforeExport="onBeforeExport"
+				useVariantManagement="true" useTablePersonalisation="true" header="Line Items"
+				showRowCount="true" persistencyKey="SmartTableAnalytical_Explored" enableAutoBinding="false"
+				demandPopin="true" class="sapUiResponsiveContentPadding" enableAutoColumnWidth="true" editTogglable="true" app:useSmartToggle="true">
+		</smartTable:SmartTable>
+    </Page>
+	
+</mvc:View>
