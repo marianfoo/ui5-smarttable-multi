@@ -1,5 +1,14 @@
 # Getting Started
 
+```bash
+# Install @sap/cds-dk if needed
+npm i -g @sap/cds-dk
+git clone https://github.com/marianfoo/ui5-smarttable-multi
+cd ui5-smarttable-multi
+npm install
+npm start
+```
+
 Welcome to your new project.
 
 It contains these folders and files, following our recommended project layout:
